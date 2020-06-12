@@ -1,0 +1,31 @@
+#toughness-armor{
+  border: 0px solid #444444;
+   height:24px;
+   width:21px;
+  background:url(../ui/shield.png) no-repeat center top;
+  color:#5d5a54;
+  font-size:14px;
+  text-align: center;
+}
+
+#parry-modifier{
+  border: 0px solid #444444;
+   height:24px;
+   width:21px;
+  background:url(../ui/parry-modifier.png) no-repeat center top;
+  color:#5d5a54;
+  font-size:14px;
+  text-align: center;
+}
+
+#parry, #toughness{
+  width: 27px;
+}
+
+.attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(3){
+  background-color: rgba(255, 255, 255, 0.3);
+  border-right: 1px solid #DDDDDD;
+}
+.attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(4){
+  background-color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,24 @@
+{
+   "name": "swade-autocalc",
+   "title": "Swade Autocalc",
+   "description": "Adding parry-modifier and toughness-armor ",
+   "author": "HappySteve",
+   "version": "0.0.1",
+   "minimumCoreVersion": "0.6.0",
+   "compatibleCoreVersion":"0.6.0",
+   "styles" : ["styles/style.css"],
+   "scripts" : ["scripts/swade-sheet-modifiers.js"],
+   "packs": [],
+   "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+      }
+    ],
+    "url": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition",
+    "manifest": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition/-/raw/master/module.json",
+    "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition/-/archive/master/foundryvtt-swade-pulpedition-master.zip",
+    "minimumCoreVersion": "0.6.0",
+    "compatibleCoreVersion": "0.6.2"
+ }
