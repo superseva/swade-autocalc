@@ -1,2 +1,2 @@
 # swade-autocalc
- Foundry VTT SWADE autocalc parry and toughness
+ Foundry VTT SWADE auto calculate parry and toughness on the character sheet depending on modifier and armor.
