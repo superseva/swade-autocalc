@@ -16,9 +16,9 @@
         "path": "lang/en.json"
       }
     ],
-    "url": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition",
-    "manifest": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition/-/raw/master/module.json",
-    "download": "https://gitlab.com/mesfoliesludiques/foundryvtt-swade-pulpedition/-/archive/master/foundryvtt-swade-pulpedition-master.zip",
+    "url": "https://github.com/superseva/swade-autocalc",
+    "manifest": "https://raw.githubusercontent.com/superseva/swade-autocalc/master/module.json",
+    "download": "https://github.com/superseva/swade-autocalc/archive/master.zip",
     "minimumCoreVersion": "0.6.0",
     "compatibleCoreVersion": "0.6.2"
  }
