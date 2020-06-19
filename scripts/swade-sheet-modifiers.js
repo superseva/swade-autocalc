@@ -14,7 +14,7 @@ class SwadeSheetExtender extends FormApplication{
 
   static updateActorToughness(actor){
     let _toughnessBase = actor.data.data.attributes.vigor.die.sides/2 + 2;
-    let _toughnessPlusModiffier = _toughnessBase + actor.data.data.stats.toughness.armor;
+    let _toughnessPlusModiffier = _toughnessBase + actor.data.data.stats.toughness.armor + actor.data.data.stats.toughness.modifier;
     let _actor = game.actors.get(actor._id);
     _actor.update({ 'data.stats.toughness.value': _toughnessPlusModiffier });
   }
@@ -55,15 +55,18 @@ Hooks.on('renderActorSheet', (app, html, data) => {
 
      let toughnessField = html.find('#toughness');
      let armorValue = data.data.stats.toughness.armor;
-     let armorField = $(`<input id="toughness-armor" name="data.stats.toughness.armor" value="${armorValue}" type="text" placeholder="0" data-dtype="Number">`);
+     let toughnessModifierValue = data.data.stats.toughness.modifier;
+     //let armorField = $(`<input id="toughness-armor" name="data.stats.toughness.armor" value="${armorValue}" type="text" placeholder="0" data-dtype="Number">`);
+    let armorField = $(`<input id="toughness-armor" name="data.stats.toughness.armor" value="${armorValue}" type="text" placeholder="0" data-dtype="Number"><input id="toughness-modifier" name="data.stats.toughness.modifier" value="${toughnessModifierValue}" type="text" placeholder="0" data-dtype="Number">`);
      armorField.insertAfter(toughnessField);
 });
 
 Hooks.on('updateActor', (actor, data, diff) => {
-    // UPDATE TOUGHNESS BY CHANGING ARMOR VALUE
-    if(SwadeSheetExtender.getVar(data, 'data.stats.toughness.armor')!=undefined || SwadeSheetExtender.getVar(data, 'data.attributes.vigor.die')!=undefined){
+    // UPDATE TOUGHNESS BY CHANGING ARMOR OR MODIFIER VALUE
+    if(SwadeSheetExtender.getVar(data, 'data.stats.toughness.armor')!=undefined || SwadeSheetExtender.getVar(data, 'data.stats.toughness.modifier')!=undefined || SwadeSheetExtender.getVar(data, 'data.attributes.vigor.die')!=undefined){
       SwadeSheetExtender.updateActorToughness(actor);
     }
+
     // UPDATE PARRY BY CHANGING MODIFIER VALUE
     if(SwadeSheetExtender.getVar(data, 'data.stats.parry.modifier')!=undefined){
       SwadeSheetExtender.updateActorParry(actor);

@@ -7,6 +7,15 @@
   font-size:14px;
   text-align: center;
 }
+#toughness-modifier{
+  border: 0px solid #444444;
+  height:24px;
+  width:21px;
+  /* background:url(../ui/shield.png) no-repeat center top; */
+  color:#5d5a54;
+  font-size:14px;
+  text-align: center;
+}
 
 #parry-modifier{
   border: 0px solid #444444;
@@ -21,11 +30,28 @@
 #parry, #toughness{
   width: 27px;
 }
+#parry{
+  margin-left: 13px !important;
+}
 
+.attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(1){
+  width: 36px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+.attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(2){
+  width: 36px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+.attributes.secondary > .flexrow.attributes-list > .attribute{
+  flex: 0 0 auto;
+}
 .attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(3){
   background-color: rgba(255, 255, 255, 0.3);
   border-right: 1px solid #DDDDDD;
+  width: 80px;
 }
 .attributes.secondary > .flexrow.attributes-list > .attribute:nth-child(4){
   background-color: rgba(255, 255, 255, 0.3);
+  width: 92px;
 }
