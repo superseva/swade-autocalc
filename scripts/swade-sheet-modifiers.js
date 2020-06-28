@@ -43,9 +43,7 @@ class SwadeSheetExtender extends FormApplication{
 
 }
 /* Adding Hooks */
-Hooks.on('init', () => {
-	//CONFIG.debug.hooks = true;
-});
+//Hooks.on('init', () => {CONFIG.debug.hooks = true;});
 
 Hooks.on('renderActorSheet', (app, html, data) => {
     let parryField = html.find('#parry');

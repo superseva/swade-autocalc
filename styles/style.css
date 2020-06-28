@@ -55,3 +55,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   width: 92px;
 }
+
+.swade.sheet.actor .sheet-body .attributes .attributes-list .attribute .toughness-block .armor-value{
+  display: none !important;
+}
