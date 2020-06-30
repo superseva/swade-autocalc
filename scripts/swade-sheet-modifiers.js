@@ -14,7 +14,7 @@ class SwadeSheetExtender extends FormApplication{
 
   static updateActorToughness(actor){
     let _toughnessBase = actor.data.data.attributes.vigor.die.sides/2 + 2;
-    let _toughnessPlusModiffier = _toughnessBase + actor.data.data.stats.toughness.armor + actor.data.data.stats.toughness.modifier;
+    let _toughnessPlusModiffier = _toughnessBase + actor.data.data.stats.toughness.armor + actor.data.data.stats.toughness.modifier + actor.data.data.stats.size;
     let _actor = game.actors.get(actor._id);
     _actor.update({ 'data.stats.toughness.value': _toughnessPlusModiffier });
   }
@@ -61,7 +61,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
 
 Hooks.on('updateActor', (actor, data, diff) => {
     // UPDATE TOUGHNESS BY CHANGING ARMOR OR MODIFIER VALUE
-    if(SwadeSheetExtender.getVar(data, 'data.stats.toughness.armor')!=undefined || SwadeSheetExtender.getVar(data, 'data.stats.toughness.modifier')!=undefined || SwadeSheetExtender.getVar(data, 'data.attributes.vigor.die')!=undefined){
+    if(SwadeSheetExtender.getVar(data, 'data.stats.toughness.armor')!=undefined || SwadeSheetExtender.getVar(data, 'data.stats.toughness.modifier')!=undefined || SwadeSheetExtender.getVar(data, 'data.attributes.vigor.die')!=undefined|| SwadeSheetExtender.getVar(data, 'data.stats.size')!=undefined){
       SwadeSheetExtender.updateActorToughness(actor);
     }
 

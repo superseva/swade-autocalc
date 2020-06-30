@@ -1,8 +1,9 @@
 #toughness-armor{
   border: 0px solid #444444;
-   height:24px;
-   width:21px;
-  background:url(../ui/shield.png) no-repeat center top;
+  height:24px;
+  flex: 1;
+  background:url(../ui/police-badge.svg) no-repeat center top;
+  background-size: cover;
   color:#5d5a54;
   font-size:14px;
   text-align: center;
@@ -10,8 +11,9 @@
 #toughness-modifier{
   border: 0px solid #444444;
   height:24px;
-  width:21px;
-  /* background:url(../ui/shield.png) no-repeat center top; */
+  flex: 1;
+  background:url(../ui/square.svg) no-repeat center top;
+  background-size: cover;
   color:#5d5a54;
   font-size:14px;
   text-align: center;
@@ -19,9 +21,10 @@
 
 #parry-modifier{
   border: 0px solid #444444;
-   height:24px;
-   width:21px;
-  background:url(../ui/parry-modifier.png) no-repeat center top;
+  height:24px;
+  flex: 1;
+  background:url(../ui/square.svg) no-repeat center top;
+  background-size: cover;
   color:#5d5a54;
   font-size:14px;
   text-align: center;

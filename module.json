@@ -3,7 +3,7 @@
    "title": "Swade Autocalc",
    "description": "Adding parry-modifier and toughness-armor ",
    "author": "HappySteve",
-   "version": "0.0.3",
+   "version": "0.0.4",
    "minimumCoreVersion": "0.6.0",
    "compatibleCoreVersion":"0.6.4",
    "styles" : ["styles/style.css"],
