@@ -1,7 +1,7 @@
 # swade-autocalc
  Foundry VTT SWADE auto calculate parry and toughness on the character sheet based on relative attributes/skills/modifiers/armor.
  
- [Imgur](https://i.imgur.com/5Jl533o.png)
+ ![Imgur](https://i.imgur.com/5Jl533o.png)
 
  It will re-calculate PARRY value in case you
  1. ADD/MODIFY Fighting Skill value
