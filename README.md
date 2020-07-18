@@ -10,7 +10,7 @@
 
  It will re-calculate TOUGHNESS value in case you:
  1. CHANGE Vigor Dice value.
- 2. ADD or EQUIP an item that has armor value (equiping is not working at the moment due to the core not registering the armor value, please enter armor value in the filed manualy)
+ 2. ADD or EQUIP an item that has armor value
  3. CHANGE Toughness modifier field.
  4. CHANGE size value. 
  You can still change Toughness field value manually but if you do anything from above it will recalculate.
