@@ -1,4 +1,6 @@
 # swade-autocalc
+REMOVED THOUGHNESS CALC SINCE IT IS HANDLED BY THE CORE SYSTEM NOW
+-------------------------------------------------------------------------------------
  Foundry VTT SWADE auto calculate parry and toughness on the character sheet based on relative attributes/skills/modifiers/armor.
  
  ![Imgur](https://i.imgur.com/5Jl533o.png)
