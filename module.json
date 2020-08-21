@@ -1,7 +1,7 @@
 {
    "name": "swade-autocalc",
    "title": "Swade Autocalc",
-   "description": Calculating Parry",
+   "description": Calculating Parry Value",
    "author": "HappySteve",
    "version": "0.0.5",
    "minimumCoreVersion": "0.6.0",
